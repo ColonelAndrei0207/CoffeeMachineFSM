@@ -1,0 +1,19 @@
+README
+
+Comments:
+This project has been created in order to improve my Verilog HDL skills.
+Currently the FSM is in no way capable of being put into production. It's main function is not achived.
+This project has been uploaded for recrutires and tehnicicans willing to work with me.
+
+Content:
+
+1.Main objective
+
+   This project is looking to implement a small-scale main computer of a coffe machine. This state machine should recieve inputs from the user and from the main
+components of the device. 
+
+2. Thought process
+   
+   I have designed the circut to recieve information from the user, through small impulses. I am considering that the user is either looking to make himself a 
+small espresso, a double espresso, or a coffee with milk. These parameters are set and control through registers in the circut that, in theory, are linked to the 
+entire system.

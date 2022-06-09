@@ -1,0 +1,67 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun May 22 08:52:53 2022
+# Process ID: 10288
+# Current directory: D:/FACULTATE/semestrul 4/CID/ANTRENAMENT/preg_test2_01
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2496 D:\FACULTATE\semestrul 4\CID\ANTRENAMENT\preg_test2_01\preg_test2_01.xpr
+# Log file: D:/FACULTATE/semestrul 4/CID/ANTRENAMENT/preg_test2_01/vivado.log
+# Journal file: D:/FACULTATE/semestrul 4/CID/ANTRENAMENT/preg_test2_01\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/FACULTATE/semestrul 4/CID/ANTRENAMENT/preg_test2_01/preg_test2_01.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/FACULTATE/semestrul 4/CID/ANTRENAMENT/preg_test2_01/preg_test2_01.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/FACULTATE/semestrul 4/CID/ANTRENAMENT/preg_test2_01/preg_test2_01.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/FACULTATE/semestrul 4/CID/ANTRENAMENT/preg_test2_01/preg_test2_01.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FACULTATE/semestrul 4/CID/ANTRENAMENT/preg_test2_01/preg_test2_01.srcs/sources_1/new/cnt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FACULTATE/semestrul 4/CID/ANTRENAMENT/preg_test2_01/preg_test2_01.srcs/sources_1/new/espresor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module espresor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FACULTATE/semestrul 4/CID/ANTRENAMENT/preg_test2_01/preg_test2_01.srcs/sources_1/new/state.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module state
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FACULTATE/semestrul 4/CID/ANTRENAMENT/preg_test2_01/preg_test2_01.srcs/sources_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/FACULTATE/semestrul 4/CID/ANTRENAMENT/preg_test2_01/preg_test2_01.sim/sim_1/behav/xsim'
+"xelab -wto deb926da79194f5db15625a130cb27f9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto deb926da79194f5db15625a130cb27f9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 3 for port 'k' [D:/FACULTATE/semestrul 4/CID/ANTRENAMENT/preg_test2_01/preg_test2_01.srcs/sources_1/new/espresor.v:23]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.state
+Compiling module xil_defaultlib.cnt
+Compiling module xil_defaultlib.espresor
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/FACULTATE/semestrul 4/CID/ANTRENAMENT/preg_test2_01/preg_test2_01.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
